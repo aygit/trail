@@ -2,8 +2,10 @@
 
 
 set -x
+echo $pwd
 
-cd ${workspace}/trail/android
+cd android
+echo $pwd
 sleep 2
 fastlane beta
 
