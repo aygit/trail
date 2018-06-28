@@ -5,17 +5,15 @@ pipeline {
     stage('Build') {
          steps {
          sh   'npm install'
-         sh 'cd ${workspace}/trail/android'
-         sh 'echo $PWD'
-         sh 'fastlane beta'
 
         }
    }
  
 
-   stage('Deploy') {
+   
+   stage('fastlanebeta') {
     steps  {
-      sh  './jenkins/scripts/deploy.sh'
+      sh  './jenkins/scripts/fastlanebeta.sh'
       echo ' app has been deplloyed successfully'
 
     }
