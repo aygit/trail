@@ -32,7 +32,7 @@ platform :android do
   create_update: false,
   bundle_short_version: "1.0.2",
   bundle_version: "1.0.2.145",
-  apk: "/Users/ayoemiloju/.jenkins/workspace/trail/android/app/build/outputs/apk/app-release-unsigned.apk",
+  apk: "lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]",
   notes: "Changelog"
 ) 
  
