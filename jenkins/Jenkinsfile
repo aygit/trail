@@ -5,7 +5,9 @@ pipeline {
     stage('Build') {
          steps {
          sh   'npm install'
-         sh 'react-native run-android'
+         sh 'cd android'
+         sh 'fastlane beta'
+
         }
    }
  
