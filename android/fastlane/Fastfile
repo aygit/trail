@@ -27,7 +27,16 @@ platform :android do
   lane :beta do
     gradle(task: "clean assembleRelease")
     
-  
+   hockey(
+  api_token: "b5515b5e476e49f4946464b52732bdb7",
+  create_update: true,
+  public_identifier: "....",
+  bundle_short_version: "1.0.2",
+  bundle_version: "1.0.2.145",
+  apk: "./my.msi",
+  notes: "Changelog"
+) 
+ 
     # sh "your_script.sh"
 end
 
