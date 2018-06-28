@@ -5,7 +5,8 @@ pipeline {
     stage('Build') {
          steps {
          sh   'npm install'
-         sh 'cd android'
+         sh 'cd ${workspace}/trail/android'
+         sh 'echo $PWD'
          sh 'fastlane beta'
 
         }
