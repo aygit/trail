@@ -1,7 +1,6 @@
 {
-  "name": "trail",
+  "name": "@ayodejiemiloju/trail",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
@@ -18,5 +17,17 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aygit/trail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aygit/trail/issues"
+  },
+  "homepage": "https://github.com/aygit/trail#readme",
+  "description": ""
 }
