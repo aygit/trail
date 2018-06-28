@@ -33,7 +33,7 @@ platform :android do
   public_identifier: "....",
   bundle_short_version: "1.0.2",
   bundle_version: "1.0.2.145",
-  apk: "./android/app/build/outputs/apk/app-release-unsigned.apk",
+  apk: "./android/app/build/outputs/apk",
   notes: "Changelog"
 ) 
  
