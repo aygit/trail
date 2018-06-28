@@ -31,8 +31,8 @@ platform :android do
   api_token: "b5515b5e476e49f4946464b52732bdb7",
   create_update: false,
   bundle_short_version: "1.0.2",
-  bundle_version: "1.0.2.145",
-  apk: "lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH]",
+  bundle_version: "1.0.2.146",
+  apk: lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH],
   notes: "Changelog"
 ) 
  
