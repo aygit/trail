@@ -13,11 +13,18 @@ pipeline {
    
    stage('fastlanebeta') {
     steps  {
+       parallel ("build android" : {
+         
       sh  './jenkins/scripts/fastlanebeta.sh'
       echo ' app has been deplloyed successfully'
 
-    }
-
+        },
+      
+       "build ios app" : {
+        sh './jenkins/scripts/ios.sh'
+        echo 'ios app has been deployed successfully'
+       }
+    )
   }
 
 } 
