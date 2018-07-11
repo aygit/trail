@@ -1,0 +1,25 @@
+pipeline {
+  agent any
+
+  stages {
+    stage('Build') {
+         steps {
+         sh   'npm install'
+
+        }
+   }
+ 
+
+   
+   stage('fastlanebeta') {
+    steps  {
+      sh  './jenkins/scripts/fastlanebeta.sh'
+      echo ' app has been deplloyed successfully'
+
+    }
+
+  }
+
+} 
+
+} 
