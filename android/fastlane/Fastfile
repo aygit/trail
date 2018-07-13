@@ -21,7 +21,23 @@ platform :android do
     gradle(task: "test")
   end
 
+lane :gett do
+  get_version_code(
+    #app_folder_name:"project"
+    gradle_file_path:"app/build.gradle",
+    ext_constant_name:"versionName"
+  )
 
+end
+
+lane :version do
+  increment_version_code(
+        gradle_file_path: "app/build.gradle",
+        # ext_constant_name: "versionName"
+        #app_folder_name:"app"
+  )
+  commit_android_version_bump(gradle_file_folder: "app")
+end
 
   desc "build and check all the stuff"
   lane :beta do
