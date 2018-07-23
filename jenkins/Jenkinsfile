@@ -36,7 +36,8 @@ environment {
 
 post {
     always {
-      emailext attachmentsPattern: '**/report.html', '*.report',
+      emailext attachmentsPattern: '**/report.html',
+      emailext attachmentsPattern: '**path.html',
       body: 'Find attachments',
       subject: 'testtrail',
       to: 'ayoemiloju@gmail.com'
