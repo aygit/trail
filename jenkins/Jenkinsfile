@@ -33,4 +33,14 @@ environment {
 
 }
 }
+
+post {
+    always {
+      emailext attachmentsPattern: '**/report.html',
+      body: 'Find attachments',
+      subject: 'testtrail',
+      to: 'ayoemiloju@gmail.com
+    }
+}
+
 } 
