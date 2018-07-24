@@ -39,7 +39,7 @@ post {
       emailext attachmentsPattern: {'**/report.html' },
       body: 'Find attachments',
       subject: 'testtrail',
-      to: 'ayoemiloju@gmail.com'
+      to: 'ayoemiloju@gmail.com',
       attachLog: true
       
     }
